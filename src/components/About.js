@@ -8,7 +8,7 @@ const About = () => {
           <p className="about-title text">sobre mi</p>
         </Row>
         <Row>
-          <Col>
+          <Col className="images">
             <Row>
               <img
                 src={require("./images/html5.png")}
@@ -43,28 +43,30 @@ const About = () => {
               Ingeniería en Computación, me dedico tiempo completo a la
               programación.
             </p>
-            <a
-              href="https://www.linkedin.com/in/jorge-guerrero-saturnino-58a299227"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={require("./images/linkedin.png")}
-                alt="."
-                className="img icon icon-in"
-              />
-            </a>
-            <a
-              href="https://github.com/jorge-guerrero01?tab=repositories"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={require("./images/github.png")}
-                alt="."
-                className="img icon icon-git"
-              />
-            </a>
+            <div className="icon-links">
+              <a
+                href="https://www.linkedin.com/in/jorge-guerrero-saturnino-58a299227"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={require("./images/linkedin.png")}
+                  alt="."
+                  className="img icon icon-in"
+                />
+              </a>
+              <a
+                href="https://github.com/jorge-guerrero01?tab=repositories"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={require("./images/github.png")}
+                  alt="."
+                  className="img icon icon-git"
+                />
+              </a>
+            </div>
           </Col>
         </Row>
       </div>

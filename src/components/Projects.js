@@ -7,7 +7,7 @@ const Projects = () => {
         <Row>
           <p className="text projects-title">proyectos</p>
         </Row>
-        <Row>
+        <Row className="projects">
           <Col className="project-col">
             <Container className="project-container">
               <Row>

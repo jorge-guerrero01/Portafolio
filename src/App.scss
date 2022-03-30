@@ -320,6 +320,7 @@ form button:active {
 }
 
 ///////////// Footer /////////////
+
 footer {
   color: #97874c;
   background-color: #00110c;
@@ -346,4 +347,98 @@ footer h1 {
 }
 .footer-nav li {
   margin: 5px;
+}
+
+///////////// Breakpoints /////////////
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  //// Header ////
+  .main-nav {
+    display: none;
+  }
+  .name {
+    font-size: 60px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  //// About ////
+  .about-title {
+    font-size: 50px;
+  }
+  .about-section .row {
+    flex-direction: column-reverse;
+  }
+  .about-text {
+    text-align: center;
+    font-size: 25px;
+  }
+  .icon-links {
+    margin-right: 30%;
+  }
+  .images {
+    display: flex;
+  }
+  .images img {
+    max-width: 40%;
+    max-height: 40%;
+    margin: 30px auto;
+  }
+  //// Projects ////
+  .project-container {
+    height: auto;
+  }
+  .projects-title {
+    font-size: 50px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-col {
+    margin: 0;
+    padding: 10px;
+  }
+  .project-title {
+    font-size: 35px;
+  }
+  .project-img {
+    margin: auto auto 10px auto;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  .project-text {
+    font-size: 15px;
+  }
+  //// Contact ////
+  .contact h1 {
+    font-size: 40px;
+  }
+  .contact h2 {
+    font-size: 15px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
 }

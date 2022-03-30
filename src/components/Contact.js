@@ -41,7 +41,7 @@ const Contact = () => {
   }, 5000);
 
   return (
-    <div>
+    <div className="contact">
       <h1 className="text contact-title" id="contact">
         contacto
       </h1>
