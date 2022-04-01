@@ -63,6 +63,10 @@ body {
   transition: 0.6s;
 }
 
+.toggle-icon {
+  display: none;
+}
+
 .navbar {
   margin-right: 0;
   position: fixed;
@@ -159,18 +163,19 @@ nav.sticky h2 {
 .icon-git {
   float: right;
   margin: 0px 5px;
-  height: 50px;
 }
 
 .icon-in {
   float: right;
   margin: 0px 30px;
-  height: 50px;
 }
 
-.icon {
-  transition: height 0.15s;
+.icon,
+.icon:link {
+  height: 50px;
+  transition: all 0.15s;
 }
+
 .icon:hover {
   height: 60px;
 }
@@ -350,24 +355,74 @@ footer h1 {
 }
 
 ///////////// Breakpoints /////////////
-
 // X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
+@media (min-width: 0px) {
   //// Header ////
-  .main-nav {
-    display: none;
+  .sticky .toggle-nav,
+  .sticky .toggle-nav li a,
+  .toggle-nav,
+  .toggle-nav li a {
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    color: transparent;
+    text-decoration: none;
+    list-style: none;
+    transition: color 0s, position 3s;
+    pointer-events: none;
+    cursor: default;
   }
+  .toggle-icon {
+    border: none;
+    background: none;
+    padding: 20px;
+    color: #ffd951;
+    text-decoration: none;
+    font-size: 40px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.6s;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-nav,
+  .main-nav li a {
+    font-size: 13px;
+    flex-direction: column;
+    margin-right: 0;
+    padding: 1px 10px 10px 0;
+  }
+  .main-nav {
+    align-items: flex-end;
+    padding: 0;
+    margin: 60px 0;
+    position: fixed;
+    right: 0;
+    transition: all 0.15s;
+  }
+  .sticky .main-nav {
+    position: relative;
+  }
+  .sticky .toggle-icon {
+    color: #00110c;
+    padding: 10px 15px;
+  }
+  .header {
+    background-size: 230%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
   .name {
-    font-size: 60px;
+    order: -1;
+    font-size: 50px;
   }
   .title {
-    font-size: 20px;
+    font-size: 17px;
   }
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
   //// About ////
@@ -379,10 +434,12 @@ footer h1 {
   }
   .about-text {
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
   }
   .icon-links {
-    margin-right: 30%;
+    width: 50%;
+    margin: auto;
+    display: block;
   }
   .images {
     display: flex;
@@ -427,16 +484,176 @@ footer h1 {
   }
 }
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .title {
+    margin-right: 400px;
+  }
+  .header {
+    background-size: 100%;
+  }
+  .icon-links {
+    width: 30%;
+    margin: auto;
+    display: block;
+  }
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  //// Header ////
+  .header {
+    background-size: 100%;
+  }
+  //// About ////
+  .about-title {
+    font-size: 60px;
+  }
+  .about-section .row {
+    flex-direction: column-reverse;
+  }
+  .about-text {
+    text-align: center;
+    font-size: 30px;
+  }
+  .icon-links {
+    width: 25%;
+    margin: auto;
+    display: block;
+  }
+  .images {
+    display: flex;
+  }
+  .images img {
+    max-width: 50%;
+    max-height: 50%;
+    margin: 30px auto;
+  }
+  //// Projects ////
+  .project-container {
+    height: 600px;
+    max-width: 700px;
+  }
+  .projects-title {
+    font-size: 60px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-col {
+    margin: 0;
+    padding: 10px;
+  }
+  .project-title {
+    font-size: 45px;
+  }
+  .project-img {
+    margin: auto auto 10px auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .project-text {
+    font-size: 25px;
+  }
+  .project-btn {
+    font-size: 25px;
+  }
+  //// Contact ////
+  .contact h1 {
+    font-size: 50px;
+  }
+  .contact h2 {
+    font-size: 25px;
+  }
+  .contact-section .container {
+    max-width: 700px;
+  }
+  form {
+    font-size: 20px;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  //// Header ////
+  .main-nav,
+  .main-nav li a {
+    font-size: 20px;
+    flex-direction: row;
+    margin-right: 0;
+    padding: 1px 10px 10px 0;
+  }
+  .main-nav {
+    padding: 0;
+    margin: 10px 0;
+    position: fixed;
+    right: 0;
+  }
+  .header {
+    background-size: 100%;
+  }
+  .navbar {
+    flex-direction: row;
+  }
+  .main-nav {
+    padding: 0;
+  }
+  .toggle-icon {
+    display: none;
+  }
+  .name {
+    font-size: 70px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  /// About ///
+  .about-section .row {
+    flex-direction: row;
+  }
+  .about-text {
+    font-size: 24px;
+    text-align: end;
+  }
+  .images {
+    display: block;
+  }
+  .images img {
+    max-width: 30%;
+    max-height: 30%;
+    margin: 30px auto;
+  }
+  .icon-links {
+    width: auto;
+    margin-bottom: -10px;
+    display: block;
+  }
+  /// Projects ///
+  .projects {
+    flex-direction: row;
+  }
+  .project-container {
+    height: 570px;
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  /// Header ///
+  .navbar {
+    flex-direction: column;
+  }
+  .sticky {
+    flex-direction: row;
+  }
+  .header {
+    background-position: 100%;
+  }
+  /// About ///
+  .about-text {
+    font-size: 27px;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
