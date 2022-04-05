@@ -58,7 +58,7 @@ const Projects = () => {
               </Row>
               <div>
                 <a
-                  href="https://pig-game-v2.netlify.app/"
+                  href="https://jorgeguerrero-pig-game.netlify.app"
                   target="_blank"
                   rel="noreferrer"
                   className="project-btn"
@@ -88,7 +88,7 @@ const Projects = () => {
               </Row>
               <div>
                 <a
-                  href="https://forkify-v2.netlify.app/"
+                  href="https://jorge-guerrero-forkify.netlify.app"
                   target="_blank"
                   rel="noreferrer"
                   className="project-btn"
