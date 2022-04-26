@@ -37,7 +37,7 @@ const About = () => {
           <Col>
             <p className="text about-text">
               hola, tengo 20 años, y trabajo como programador front-end. Amo
-              usar JavaScript y ReactJS, aunque también tengo profundo
+              usar JavaScript, React y Node.js, aunque también tengo profundo
               conocimiento en HTML5, CSS3, Bootstrap y jQuery. Adoro el diseño
               de UI/UX y aunque me encuentro en el tercer año de la carrera de
               Ingeniería en Computación, me dedico tiempo completo a la

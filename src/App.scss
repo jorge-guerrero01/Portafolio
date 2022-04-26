@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   // background: rgba(0, 39, 27, 1);
@@ -44,19 +43,22 @@ body {
   display: flex;
   flex-direction: column;
   background: #00271b;
-  background-image: url("yo-transparente.png");
-  background-image: url("yo-transparente.png"),
-    linear-gradient(#00271b 0%, #ffd951 100%);
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: url("yo-transparente-3.png");
+  background-image: url("yo-transparente-3.png"),
+    linear-gradient(#153c46 0%, #56bb68 100%);
+  background-size: 100%;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 .name {
   font-weight: 700;
   display: flex;
-  color: #ffd951;
+  color: #ffffff;
   padding-left: 30px;
   font-size: 100px;
   line-height: 100%;
@@ -85,14 +87,14 @@ body {
   background: #fff6d4ee;
 }
 nav.sticky h1 {
-  color: #001a12;
+  color: #153c46;
   font-size: 130%;
 }
 nav.sticky ul li a {
-  color: #001a12;
+  color: #153c46;
 }
 nav.sticky ul li a:hover {
-  color: #004b34;
+  color: #286d7e;
 }
 nav.sticky h2 {
   display: none;
@@ -114,7 +116,7 @@ nav.sticky h2 {
 
 .main-nav li a {
   margin: 0px 15px;
-  color: #ffd951;
+  color: #ffffff;
   padding: 15px;
   font-size: 130%;
   text-decoration: none;
@@ -128,7 +130,7 @@ nav.sticky h2 {
 
 .title {
   display: flex;
-  color: #ffd951;
+  color: #ffffff;
   font-size: 250%;
   padding: 30px;
   transition: 0.6s;
@@ -142,18 +144,23 @@ nav.sticky h2 {
 ///////////// About Section /////////////
 
 .about-section {
-  background-color: #00271b;
+  background-image: url("pattern.png");
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #153c46;
 }
 
 .about-title {
-  color: #ffd951;
-  background-color: #00271b;
+  color: #ffffff;
   font-size: 70px;
   text-align: center;
 }
 
 .about-text {
-  color: #ffd951;
+  color: #ffffff;
   padding: 10px 30px;
   text-align: right;
   font-size: 180%;
@@ -182,20 +189,23 @@ nav.sticky h2 {
 
 ///////////// Projects Section /////////////
 .projects-section {
-  background-color: #ffd951;
+  background: #56bb68;
   padding-bottom: 20px;
 }
 
 .projects-title {
-  color: #00271b;
-  background-color: #ffd951;
+  color: #ffffff;
+  background-color: #56bb68;
   font-size: 70px;
   text-align: center;
 }
 
 .project-container {
+  box-shadow: rgba(0, 0, 0, 0.411) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.329) 0px 4px 6px -2px;
+  border-radius: 1vh;
   height: 500px;
-  background-color: #00271b;
+  background-color: #153c46;
   padding: 20px;
 }
 
@@ -205,12 +215,12 @@ nav.sticky h2 {
 
 .project-title {
   font-size: 50px;
-  color: #ffd951;
+  color: #ffffff;
   text-align: center;
 }
 
 .project-text {
-  color: #ffd951;
+  color: #ffffff;
   text-align: center;
   font-size: 20px;
 }
@@ -222,15 +232,16 @@ nav.sticky h2 {
   text-align: center;
   text-decoration: none;
   font-weight: 700;
-  color: #00271b;
-  background-color: #ffd951;
+  color: #ffffff;
+  background-color: #56bb68;
   transition: color 0.15s, background-color 0.15s;
 }
 .project-btn:hover {
-  color: aliceblue;
+  color: rgb(200, 255, 214);
   background-color: #004b34;
 }
 .project-btn:active {
+  color: #ffffff;
   background-color: #001a12;
 }
 
@@ -248,19 +259,20 @@ nav.sticky h2 {
 }
 
 ///////////// Contact Section /////////////
-
+.contact {
+  background: linear-gradient(#153c46 0%, #00181d 100%);
+}
 .contact-title {
   padding: 10px;
   margin: 0;
   font-size: 50px;
   text-align: center;
-  color: #ffd951;
-  background-color: #00271b;
+  color: #ffffff;
 }
 
 .contact-section {
   box-sizing: border-box;
-  background-color: #00271b;
+
   width: 100%;
   height: 510px;
   align-items: center;
@@ -269,7 +281,8 @@ nav.sticky h2 {
 }
 
 form {
-  background-color: #ffd951;
+  border-radius: 1vh;
+  background-color: rgb(200, 255, 214);
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -284,13 +297,13 @@ form textarea {
   margin: 10px 0;
   padding: 10px;
   outline: none;
-  background: #ffe37c;
+  background: #ffffff;
 }
 form button {
   font-weight: 700;
   padding: 15px;
-  background-color: #00271b;
-  color: #ffd951;
+  background-color: #153c46;
+  color: #ffffff;
   font-size: 18px;
   border: 0;
   outline: none;
@@ -300,7 +313,7 @@ form button {
   transition: all 0.15s;
 }
 form button:hover {
-  background-color: #004b34;
+  background-color: #0c2b33;
 }
 form button:active {
   background-color: #001a12;
@@ -312,12 +325,12 @@ form button:active {
 }
 .subtitle {
   font-size: 20px;
-  color: #ffd951;
+  color: #ffffff;
   text-decoration: none;
 }
 .subtitle a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(169, 255, 208);
   transition: all 0.15s;
 }
 .subtitle a:hover {
@@ -327,8 +340,14 @@ form button:active {
 ///////////// Footer /////////////
 
 footer {
-  color: #97874c;
-  background-color: #00110c;
+  background-image: url("pattern.png");
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #b1b1b1;
+  background-color: #00181d;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -344,11 +363,11 @@ footer h1 {
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: #97874c;
+  color: #b1b1b1;
   transition: all 0.15s;
 }
 .footer-nav a:hover {
-  color: #ffe37c;
+  color: #ffffff;
 }
 .footer-nav li {
   margin: 5px;
@@ -376,7 +395,7 @@ footer h1 {
     border: none;
     background: none;
     padding: 20px;
-    color: #ffd951;
+    color: #ffffff;
     text-decoration: none;
     font-size: 40px;
     display: flex;
@@ -405,11 +424,11 @@ footer h1 {
     position: relative;
   }
   .sticky .toggle-icon {
-    color: #00110c;
+    color: #153c46;
     padding: 10px 15px;
   }
   .header {
-    background-size: 230%;
+    background-size: 250%;
     background-repeat: no-repeat;
     background-position: bottom;
   }
@@ -426,6 +445,11 @@ footer h1 {
     align-items: flex-start;
   }
   //// About ////
+  .about-section,
+  footer {
+    background-size: 200%;
+  }
+
   .about-title {
     font-size: 50px;
   }
@@ -489,7 +513,8 @@ footer h1 {
   .title {
     margin-right: 400px;
   }
-  .header {
+  .header,
+  footer {
     background-size: 100%;
   }
   .icon-links {
@@ -503,7 +528,7 @@ footer h1 {
 @media (min-width: 768px) {
   //// Header ////
   .header {
-    background-size: 100%;
+    background-size: 200%;
   }
   //// About ////
   .about-title {
@@ -609,6 +634,10 @@ footer h1 {
     font-size: 30px;
   }
   /// About ///
+  .about-section,
+  footer {
+    background-size: 150%;
+  }
   .about-section .row {
     flex-direction: row;
   }
@@ -647,9 +676,9 @@ footer h1 {
   .sticky {
     flex-direction: row;
   }
-  .header {
-    background-position: 100%;
-  }
+  // .header {
+  //   background-position: 1%;
+  // }
   /// About ///
   .about-text {
     font-size: 27px;
