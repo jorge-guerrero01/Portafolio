@@ -42,11 +42,12 @@ body {
 .header {
   display: flex;
   flex-direction: column;
+  background-image: url("yo-transparente-3.png");
   background-image: url("yo-transparente-3.png"),
     linear-gradient(#153c46 0%, #56bb68 100%);
   background-position: center;
   height: 100vh;
-  background-attachment: fixed;
+  background-size: auto;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
