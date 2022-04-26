@@ -42,11 +42,8 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  background: #00271b;
-  background-image: url("yo-transparente-3.png");
   background-image: url("yo-transparente-3.png"),
     linear-gradient(#153c46 0%, #56bb68 100%);
-  background-size: 100%;
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
@@ -84,7 +81,7 @@ body {
 
 .sticky {
   padding: 10px 5px;
-  background: #fff6d4ee;
+  background: #ffffffd8;
 }
 nav.sticky h1 {
   color: #153c46;
